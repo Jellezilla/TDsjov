@@ -30,14 +30,8 @@ public class EnemyMove : MonoBehaviour {
 		direction = (currentWP.transform.position - transform.position).normalized * movementSpeed; 
 		rigidbody.velocity = direction;
 
-
-
-		// direction
-
 		transform.LookAt(currentWP.transform.position);
-		// move 
-		//rigidbody.AddForce(Vector3.forward * movementSpeed);
-		
+
 		distanceToWP = Vector3.Distance(transform.position,currentWP.transform.position);
 
 
